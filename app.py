@@ -16,7 +16,7 @@ if hist_button:
     st.plotly_chart(fig, use_container_width=True)
 
 # Botão para gerar um gráfico de dispersão
-disp_button = st.button('Criar Gráfico de Dispersão (Preço vs. Quilometragem)'):
+disp_button = st.button('Criar Gráfico de Dispersão (Preço vs. Quilometragem)')
 if disp_button:
     st.write('Criando um Gráfico de Dispersão (Preço vs. Quilometragem)')
     fig = px.scatter(df, x='odometer', y='price', title='Preço vs. Quilometragem')
